@@ -1,5 +1,13 @@
 <head>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"> </script>
+  <script>
+  $(document).ready(function(){
+    $.getJSON('http://anyorigin.com/go?url=swgoh.gg/u/xiazer&callback=?', function(data){
+	    $('#output').html(data.contents);
+    });
+  </script>
 </head>
 <body>
   <h1> What's Up?!</h1>
+  <div id="output"> </div>
 </body>
