@@ -2,8 +2,8 @@
 <html>
 	<head>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-		<script src="clipboard.min.js"></script>
-		<script src="request.js"></script> 
+		<script src="assets/js/clipboard.min.js"></script>
+		<script src="assets/js/request.js"></script> 
 		<style>
 			table, th, td {
 			    border: 1px solid black;
@@ -11,18 +11,15 @@
 			}
 			th, td {
 			    padding: 5px;
-			    text-align: left;    
+			    text-align: center;    
 			}
 			th.toon {
-			  /* Something you can count on */
 			  height: 225px;
 			  white-space: nowrap;
 			}
 			th.toon > div {
 			  transform: 
-			    /* Magic Numbers */
 			    translate(25px, 51px)
-			    /* 45 is really 360 - 45 */
 			    rotate(270deg);
 			  	width: 30px;
 			}
@@ -46,9 +43,5 @@
 		<button class="clipBoard" data-clipboard-target="#output">
 		    Copy To Clipboard
 		</button>
-		<?php
-			
-			//FindGuild("http://swgoh.gg/u/xiazer/");
-		?>
 	</body>
 </html>
